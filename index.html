@@ -7,7 +7,9 @@
   <body>
     <header class="main-header">
       <!---Тут должен быть логотип-->
-      <a href="#"></a>
+      <p>
+        <img src="" alt="логотип магазина «Техномарт»">
+      </p>
       <!---А тут как-то нужно сделать поиск-->
       <div class="search">Поиск</div>
       <ul class="user-navigation">
@@ -32,7 +34,7 @@
       </div>
       <nav class="main-navigation">
         <ul>
-          <li><a href="index.html">Главная</a></li>
+          <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -79,14 +81,12 @@
             <a href="catalog.html">Открыть каталог</a>
           </div>
           <div class="arrows">
-            <label for="slide-1" class="arrow-right"></label>
-            <label for="slide-2" class="arrow-left"></label>
-            <input id="slide-1" type="radio">
-            <input id="slide-2" type="radio">
+            <button class="button-left" type="button"></button>
+            <button class="button-right" type="button"></button>
           </div>
           <div class="switches">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
+            <div class="button-left"></div>
+            <div class="button-right"></div>
           </div>
         </div>
       </section>
@@ -94,23 +94,59 @@
         <h2>Популярные товары:</h2>
         <ul>
           <li>
-            <h3>Перфоратор Bosch BFG 9000</h3>
-            <p><del>32500 P.</del></p>
-            <p>25500 Р.</p>
+            <h3>Перфоратор<span>Bosch BFG 9000</span></h3>
+                <div>
+                <img src="" alt="Перфоратор Bosch BFG 9000">
+                </div>
+                <p>
+                  <span><del>32500 Р.</del></span>
+                    <span>25500 Р.</span>
+                </p>
+                <div class="actions">
+                    <a href="#" class="buy">Купить</a>
+                    <a href="#" class="bookmark">В закладки</a>
+              </div>
           </li>
           <li>
-            <h3>Перфоратор Bosch BFG 3000</h3>
-            <p><del>22500 P.</del></p>
-            <p>15500 Р.</p>
+            <h3>Перфоратор<span>Bosch BFG 3000</span></h3>
+                <div>
+                <img src="" alt="Перфоратор Bosch BFG 3000">
+                </div>
+                <p>
+                  <span><del>22500 Р.</del></span>
+                  <span>15500 Р.</span>
+                </p>
+                <div class="actions">
+                    <a href="#" class="buy">Купить</a>
+                    <a href="#" class="bookmark">В закладки</a>
+                </div>
+           </li>
+          <li>
+              <h3>Перфоратор<span>Bosch BFG 6000</span></h3>
+              <div>
+                <img src="" alt="Перфоратор Bosch BFG 6000">
+              </div>
+              <p>
+                 <span><del>20500 Р.</del></span>
+                 <span>25500 Р.</span>
+              </p>
+              <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+              </div>
           </li>
           <li>
-            <h3>Перфоратор Bosch BFG 6000</h3>
-            <p><del>30500 Р.</del></p>
-            <p>25500 Р.</p>
-          </li>
-          <li>
-            <h3>Перфоратор Bosch BFG 2000</h3>
-            <p>12500 Р.</p>
+              <h3>Перфоратор<span>Bosch BFG 3000</span></h3>
+              <div>
+                <img src="" alt="Перфоратор Bosch BFG 3000">
+              </div>
+              <p>
+                 <span>12500 Р.</span>
+              </p>
+              <div class="actions">
+                  <a href="#" class="buy">Купить</a>
+                  <a href="#" class="bookmark">В закладки</a>
+              </div>
           </li>
         </ul>
         <div>
@@ -184,18 +220,18 @@
             Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </div>
         <div class="switcher-slide-2">
-          <h3 class="switcher-title">Гарантия</h3>
-          <p class="switcher-text">
-              Если купленный у нас товар поломается или заискрит, 
-              а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-              Дом уж восстановите как-нибудь сами.</p>
+            <h3 class="switcher-title">Гарантия</h3>
+            <p class="switcher-text">
+            Если купленный у нас товар поломается или заискрит, 
+            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+            Дом уж восстановите как-нибудь сами.</p>
         </div>
         <div class="switcher-slide-3">
-          <h3 class="switcher-title">Кредит</h3>
-          <p class="switcher-text">
-              Залезть в долговую яму стало проще! 
-              Кредитные консультанты придут вам на помощь.</p>
-              <button type="button">Отправить заявку</button>
+            <h3 class="switcher-title">Кредит</h3>
+            <p class="switcher-text">
+            Залезть в долговую яму стало проще! 
+            Кредитные консультанты придут вам на помощь.</p>
+            <a href="#">Отправить заявку</a>
         </div>
       </section>
       <section>
@@ -225,7 +261,9 @@
     </main>
     <footer>
       <!---Тут у нас опять логотип-->
-      <a href=""></a>
+      <p>
+        <img src="" alt="логотип магазина «Техномарт»">
+      </p>
       <div>
         <ul>
           <li><a href="#">Компания</a></li>
