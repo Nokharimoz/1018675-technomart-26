@@ -53,12 +53,42 @@
            </ul>
            <h1>Перфораторы</h1>
        </div>
-       <section>
-           <h2>Фильтр:</h2>
-           <!--Здесь должна быть форма-->
-       </section>
+       <form>
+           <div>Фильтр:</div>
+           <h2>Цена</h2>
+           <div class="range-slider">
+             <span class="bar"></span>
+             <span class="circle-min"></span>
+             <span class="circle-max"></span>
+           </div>
+           <div>
+             <input type="text" class="min-price" name="min-price" value="0">
+             <span>-</span>
+             <input type="text" class="max-price" name="max-price" value="30000">
+           </div>
+          <!--Здесь должна быть форма-->
+       </form>
        <section>
            <h2>Сортировка:</h2>
+           <ul>
+             <li>
+               <a href="">По цене</a>
+             </li>
+             <li>
+               <a href="">По типу</a>
+             </li>
+             <li>
+               <a href="">По функционалу</a>
+             </li>
+           </ul>
+           <ul class="sorting-arrows">
+             <li>
+               <a href=""></a>
+             </li>
+             <li>
+               <a href=""></a>
+             </li>
+           </ul>
            <!--Здесь должна быть форма-->
        </section>
        <section>
