@@ -210,9 +210,9 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="column-switcher">
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li><button type="button">Доставка</button></li>
+            <li><button type="button">Гарантия</button></li>
+            <li><button type="button">Кредит</button></li>
           </ul>
         </div>
         <div class="switcher-slide-1">
@@ -258,7 +258,9 @@
         <p>Вы можете забрать товар сами<br>
            заехав в наш офис:
            <!---Тут должна быть карта-->
+           <a href="#">
            <img src="./img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+           </a>
         </p>
         <a href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -319,7 +321,8 @@
           <label for="your-email">Ваш e-mail:</label>
           <input id="your-email" name="your-email" type="email" placeholder="email@example.com" >
         </p>
-        <p>Текст письма:
+        <p>
+          <label for="message-text">Текст письма:</label>
           <textarea name="message-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
