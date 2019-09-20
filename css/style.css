@@ -44,6 +44,25 @@ a{
     color: #ffffff;
 }
 
+.logo{
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    border-bottom: 5px solid #d6656e;
+    background-color: #ee3643;
+}
+
+.logo:hover{
+    background-color: #ca2c37;
+}
+
+.logo:active{
+    background-color: #ee3643;
+}
+
 .header-top{
     background-color: #293449;
 }
@@ -486,6 +505,25 @@ a{
     background-color: #ee3643;
 }
 
+.footer-logo{
+    display: inline-block;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 5px solid #a13343;
+
+    background-color: #ee3643;
+}
+
+.footer-logo:hover{
+    background-color: #ca2c37;
+}
+
+.footer-logo:active{
+    background-color: #ee3643;
+}
+}
 
 .modal-3{
     display: none;
