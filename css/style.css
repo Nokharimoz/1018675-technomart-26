@@ -173,6 +173,189 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.store-offers h3{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.store-offers a{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.materials{
+    background-color: #ffbf47;
+}
+
+.materials a{
+    background-color: #e5ac38;
+}
+
+.store-offers a:hover{
+    background-color: #cccccc;
+}
+
+.store-offers a:active{
+    background-color: #b2b2b2;
+}
+
+.instrument{
+    background-color: #3bbce3;
+}
+
+.instrument a{
+    background: #35a9cc;
+}
+
+.technics{
+    background-color: #dc91d8;
+}
+
+.technics a{
+    background-color: #c682c2;
+}
+
+.discounts{
+    background-color: #8ed78f;
+}
+
+.discounts a{
+    background-color: #80c180;
+}
+
+.delivery{
+    background-color: #ffc047;
+}
+
+.delivery a{
+    background-color: #e5ac40;
+}
+
+.slider h3{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.slider p{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+
+    color: #ffffff;
+}
+
+.button{
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.buttonr:hover{
+    background-color: #ca2c37;
+}
+
+.button:active{
+    background-color: #ba2732;
+}
+
+.slide-1{
+    width: 620px;
+    height: 270px;
+    background-image: url(../img/drill.jpg);
+    background-repeat: no-repeat;
+}
+
+.slide-2{
+    width: 620px;
+    height: 270px;
+    background-image: url(../img/hammer-drill.jpg);
+    background-repeat: no-repeat;
+}
+
+.popular-goods h2,
+.popular-brands h2{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #32425c;
+    background-color: #f9f5f0;
+}
+
+.brand-name a{
+    display: block;
+    border: 1px solid#ccc;
+}
+
+.services{
+    background-color: #f4f8f9;
+}
+
+.services h2{
+    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.services p{
+    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: none;
+    color: #000000;
+}
+
+.switcher-button{
+    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid;
+
+    background-color: #32425c;
+}
+
+.switcher-button:hover{
+    background-color: #293449;
+}
+
+.switcher-button:focus{
+    border: none;
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.switcher-title{
+    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.switcher-text{
+    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: none;
+    color: #000000;
+}
+
 .about-us h1{
     font-size: 30px;
     color: #000000;
@@ -187,6 +370,7 @@ a{
 
     background-color: #ffffff;
 }
+
 
 .about-us a{
     font-size: 14px;
@@ -318,34 +502,44 @@ a{
     background-color: #ffffff;
 }
 
-.sorting{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+.sorting,
+.range-filter,
+.range-slider{
+    background-color: #f2f6f8;
+}
 
+.sorting ul{
     list-style: none;
 }
 
-.sorting h2{
+.sorting h2,
+.range-filter{
     font-size: 13px;
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
 }
 
-.sorting a,
+.sorting a{
+    color:rgba(0, 0, 0, 0.3);
+    border-bottom: 2px dotted #ee3643;
+}
 .sorting-arrows a{
     color:rgba(0, 0, 0, 0.3);
 }
 
-.sorting a:hover,
+.sorting a:hover{
+    color: #000000;
+    border-bottom: 2px solid #ee3643;
+}
 .sorting-arrows a:hover{
     color: #000000;
 }
 
-.sorting a:active,
-.sorting-arrows a:active{
+.sorting a:focus,
+.sorting-arrows a:focus{
     color: #ee3643;
+    border: none;
 }
 
 .filter-firm{
@@ -465,7 +659,7 @@ a{
     background-color: #518534;
 }
 
-.bookmark{
+.actions .bookmark{
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -503,6 +697,25 @@ a{
 .pagination-item-current a{
     color: #ffffff;
     background-color: #ee3643;
+}
+
+.about-drills{
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #f2f6f8; 
+}
+
+.about-drills h2{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-drills p{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
 }
 
 .footer-logo{

@@ -58,24 +58,24 @@
     <main>
       <section>
         <h2 class="visually-hidden">Предложения магазина</h2>
-        <ul>
-          <li>
+        <ul class="store-offers">
+          <li class="materials">
             <h3>Материалы</h3>
             <a href="#">На любой вкус</a>
           </li>
-          <li>
+          <li class="instrument">
             <h3>Инструмент</h3>
             <a href="#">На все случаи жизни</a>
           </li>
-          <li>
+          <li class="technics">
             <h3>Техника</h3>
             <a href="#">Для стройки</a>
           </li>
-          <li>
+          <li class="discounts">
             <h3>Скидки 50%</h3>
             <a href="#">на 350 товаров</a>
           </li>
-          <li>
+          <li class="delivery">
             <h3>Доставка</h3>
             <a href="#">Бесплатно</a>
           </li>
@@ -84,12 +84,12 @@
           <div class="slide-1">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a href="catalog.html" class="button">Открыть каталог</a>
           </div>
           <div class="slide-2">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a href="catalog.html" class="button">Открыть каталог</a>
           </div>
           <div class="arrows">
             <button class="button-left" type="button"></button>
@@ -101,10 +101,10 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="popular-goods">
         <h2>Популярные товары:</h2>
-        <ul>
-          <li>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <h3>Перфоратор<span>Bosch BFG 9000</span></h3>
                 <div>
                 <img src="./img/perforator-4.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
@@ -118,7 +118,7 @@
                     <a href="#" class="bookmark">В закладки</a>
               </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <h3>Перфоратор<span>Bosch BFG 3000</span></h3>
                 <div>
                 <img src="./img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
@@ -132,7 +132,7 @@
                     <a href="#" class="bookmark">В закладки</a>
                 </div>
            </li>
-          <li>
+          <li class="catalog-item">
               <h3>Перфоратор<span>Bosch BFG 6000</span></h3>
               <div>
                 <img src="./img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
@@ -146,7 +146,7 @@
                   <a href="#" class="bookmark">В закладки</a>
               </div>
           </li>
-          <li>
+          <li class="catalog-item">
               <h3>Перфоратор<span>Bosch BFG 2000</span></h3>
               <div>
                 <img src="./img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
@@ -160,67 +160,67 @@
               </div>
           </li>
         </ul>
-        <div>
-          <a href="#">Все популярные товары</a>
+        <div class="all-popular-goods">
+          <a href="#" class="button">Все популярные товары</a>
         </div>
       </section>
-      <section>
+      <section class="popular-brands">
         <h2>Популярные Производители</h2>
-        <ul>
-          <li>
+        <ul class="brand-list">
+          <li class="brand-name">
             <a href="#">
             <img src="./img/bosch.png" alt="Bosch">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/makita.png" alt="Makita">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/dewalt.png" alt="DeWalt">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/interskol.png" alt="Интерскол">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/hitachi.png" alt="Hitachi">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/lg.png" alt="LG">
             </a>
           </li>
-          <li>
+          <li class="brand-name"> 
             <a href="#">
               <img src="./img/aeg.png" alt="AEG">
             </a>
           </li>
-          <li>
+          <li class="brand-name">
             <a href="#">
               <img src="./img/metabo.png" alt="Metabo">
             </a>
           </li>
         </ul>
-        <div>
-            <a href="#">Все Производители</a>
+        <div class="all-brands">
+            <a href="#" class="button">Все Производители</a>
         </div>
       </section>
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
            <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="column-switcher">
           <ul>
-            <li><button type="button">Доставка</button></li>
-            <li><button type="button">Гарантия</button></li>
-            <li><button type="button">Кредит</button></li>
+            <li><button type="button" class="switcher-button">Доставка</button></li>
+            <li><button type="button" class="switcher-button">Гарантия</button></li>
+            <li><button type="button" class="switcher-button">Кредит</button></li>
           </ul>
         </div>
         <div class="switcher-slide-1">
@@ -242,7 +242,7 @@
             <p class="switcher-text">
             Залезть в долговую яму стало проще! 
             Кредитные консультанты придут вам на помощь.</p>
-            <a href="#">Отправить заявку</a>
+            <a href="#" class="button">Отправить заявку</a>
         </div>
       </section>
       <section class="about-us">
