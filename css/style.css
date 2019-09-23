@@ -174,14 +174,14 @@ a{
 }
 
 .store-offers h3{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
 }
 
 .store-offers a{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -236,7 +236,7 @@ a{
 }
 
 .slider h3{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
@@ -244,7 +244,7 @@ a{
 }
 
 .slider p{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -284,7 +284,7 @@ a{
 
 .popular-goods h2,
 .popular-brands h2{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -304,7 +304,7 @@ a{
 }
 
 .services h2{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -312,7 +312,7 @@ a{
 }
 
 .services p{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     text-transform: none;
@@ -320,7 +320,7 @@ a{
 }
 
 .switcher-button{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 21px;
     line-height: 30px;
     color: #ffffff;
@@ -340,7 +340,7 @@ a{
 }
 
 .switcher-title{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -349,7 +349,7 @@ a{
 }
 
 .switcher-text{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     text-transform: none;
@@ -362,7 +362,7 @@ a{
     text-transform: uppercase;
 }
 .about-us p{
-    font-family: "PTSans",Arial, Helvetica, sans-serif;
+    font-family: "PTSans",Arial, sans-serif;
     font-size: 15px;
     line-height: 24px;
     color: #000000;
@@ -388,7 +388,7 @@ a{
 }
 
 .techno-contacts p{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 15px;
     line-height: 24px;
     color: #000000;
@@ -492,7 +492,7 @@ a{
 }
 
 .breadcrumbs{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -500,6 +500,17 @@ a{
     list-style: none;
 
     background-color: #ffffff;
+}
+
+.breadcrumbs a{
+    color: #000000;
+}
+
+.breadcrumbs li:first-child a{
+    display: inline-block;
+    background-image: url(../img/icon-home.svg) no-repeat;
+    width: 14px;
+    height: 12px;
 }
 
 .sorting,
@@ -524,33 +535,60 @@ a{
     color:rgba(0, 0, 0, 0.3);
     border-bottom: 2px dotted #ee3643;
 }
-.sorting-arrows a{
-    color:rgba(0, 0, 0, 0.3);
-}
 
 .sorting a:hover{
     color: #000000;
     border-bottom: 2px solid #ee3643;
 }
-.sorting-arrows a:hover{
-    color: #000000;
-}
 
-.sorting a:focus,
-.sorting-arrows a:focus{
+.sorting a:focus,{
     color: #ee3643;
     border: none;
 }
 
+.sorting-arrows li:first-child a{
+    width: 0px;
+	height: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+}
+
+.sorting-arrows li:last-child a{
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid rgba(0, 0, 0, 0.3);
+}
+
+.sorting-arrows li:first-child a:hover{
+    border-bottom: 10px solid #000;
+}
+
+.sorting-arrows li:last-child a:hover{
+    border-top: 10px solid #000;
+    border-bottom: none;
+}
+
+.sorting-arrows li:first-child a:focus{
+    border-bottom: 10px solid #ee3643;
+}
+
+.sorting-arrows li:last-child a:focus{
+    border-top: 10px solid #ee3643;
+}
+
 .filter-firm{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
 
-    list-style: none;s
+    list-style: none;
 }
+
 .filter-firm fieldset{
     border: none;
 }
@@ -569,7 +607,7 @@ a{
 }
 
 .filter-power{
-    font-family:  "PTSans", Arial, Helvetica, sans-serif;
+    font-family:  "PTSans", Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
     color: #000000;
@@ -588,7 +626,7 @@ a{
     text-align: center;
     vertical-align: middle;
 
-    font-family:  "PTSans", Arial, Helvetica, sans-serif;
+    font-family:  "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -700,7 +738,7 @@ a{
 }
 
 .about-drills{
-    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     color: #000000;
     background-color: #f2f6f8; 
 }
@@ -735,7 +773,6 @@ a{
 
 .footer-logo:active{
     background-color: #ee3643;
-}
 }
 
 .modal-3{
