@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    min-width: 960px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -47,6 +48,12 @@ a{
 .main-navigation a,
 .footer-navigation a{
     color: #ffffff;
+}
+
+.user-navigation a{
+    padding: 0 22px;
+    padding-top: 14px;
+    padding-bottom: 13px;
 }
 
 .header-top-wrapper{
@@ -190,12 +197,23 @@ a{
 
 .main-navigation ul{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-size: 17px;
     line-height: 17px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 50px;
+    padding-right: 55px;
     color: #ffffff;
+    border-bottom: 5px solid #293449;
 
     background-color: #32425c;
+}
+
+.main-navigation a {
+    padding: 21px 30px 21px;
 }
 
 .main-navigation a:hover{
@@ -205,6 +223,7 @@ a{
 .main-navigation a:active{
     background-color: rgba(255, 255, 255, 0.5);
 }
+
 
 .store-offers h3{
     font-family: "PTSans", Arial, sans-serif;
