@@ -38,14 +38,47 @@ a{
     list-style: none;
 }
 
+.user-login{
+    display: flex;
+    justify-content: space-between;
+}
+
 .user-navigation a,
 .main-navigation a,
 .footer-navigation a{
     color: #ffffff;
 }
 
+.header-top-wrapper{
+    display: flex;
+    width: 100%;
+    background-color: #293449;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 433px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.search{
+    margin-right: auto;
+}
+
 .logo{
-    display: inline-block;
     margin-top: 0;
     padding-left: 55px;
     padding-right: 55px;
@@ -63,14 +96,7 @@ a{
     background-color: #ee3643;
 }
 
-.header-top{
-    background-color: #293449;
-}
 
-.user-navigation{
-    font-size: 17px;
-    line-height: 18px;
-}
 .user-navigation li:last-child a{
     font-size: 17px;
     line-height: 18px;
@@ -119,6 +145,11 @@ a{
     text-transform: none;
 }
 
+.info-block{
+    display: flex;
+    justify-content: space-between;
+}
+
 .head-tel a{
     padding-left: 42px;
     padding-right: 50px;
@@ -157,7 +188,9 @@ a{
 }
 
 
-.main-navigation{
+.main-navigation ul{
+    display: flex;
+    justify-content: space-between;
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
@@ -356,6 +389,23 @@ a{
     color: #000000;
 }
 
+.index-colums{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us{
+    
+}
+
+.about-us ul{
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    list-style: none;
+}
+
 .about-us h1{
     font-size: 30px;
     color: #000000;
@@ -363,7 +413,7 @@ a{
 }
 .about-us p{
     font-family: "PTSans",Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     color: #000000;
     text-transform: none;
@@ -381,6 +431,11 @@ a{
     background-color: #ee3643;
 }
 
+.techno-contacts{
+    width: 300px;
+   margin-left: auto;
+}
+
 .techno-contacts h2{
     font-size: 30px;
     color: #000000;
@@ -389,7 +444,7 @@ a{
 
 .techno-contacts p{
     font-family: "PTSans", Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
     color: #000000;
     text-transform: none;
@@ -406,7 +461,14 @@ a{
     background-color: #ee3643;
 }
 
+footer{
+    display: block;
+    width: 100%;
+    background-color: #32425c;
+}
+
 .footer-container{
+    display: flex;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -420,6 +482,28 @@ a{
 
 .footer-container a:active{
     color: rgba(241, 245, 247, 0.5)
+}
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    width: 615px;
 }
 
 .footer-menu a,
@@ -452,6 +536,11 @@ a{
     color: #ee3643;
 }
 
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+}
+
 .modal-1{
     display: none;
     font-size: 18px;
@@ -465,6 +554,7 @@ a{
 }
 
 .catalog-login{
+    display: flex;
     list-style: none;
 }
 
@@ -750,7 +840,7 @@ a{
 }
 
 .footer-logo{
-    display: inline-block;
+    display: block;
     padding-left: 42px;
     padding-right: 42px;
     padding-top: 21px;
