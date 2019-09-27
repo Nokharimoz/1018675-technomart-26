@@ -224,6 +224,26 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.offers-slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.store-offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.offers-box{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.offers-box:nth-child(3n){
+    margin-right: 0;
+}
 
 .store-offers h3{
     font-family: "PTSans", Arial, sans-serif;
@@ -285,6 +305,10 @@ a{
 
 .delivery a{
     background-color: #e5ac40;
+}
+
+.slide-2{
+    display: none;
 }
 
 .slider h3{
@@ -601,6 +625,9 @@ a{
 }
 
 .breadcrumbs{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -614,6 +641,30 @@ a{
 .breadcrumbs a{
     color: #000000;
 }
+
+.title{
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #32425c;
+
+    background-color: #f2f6f8;
+}
+
+.catalog-columns{
+    display: flex;
+}
+
+.sorting-by{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .sorting,
 .range-filter,
@@ -747,7 +798,22 @@ a{
 }
 
 .catalog-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
+}
+
+.brand-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.brand-name{width: 220px;
+    height: 145px;
 }
 
 .catalog-item{
@@ -822,6 +888,7 @@ a{
 }
 
 .pagination-list{
+    display: flex;
     list-style:none;
 }
 

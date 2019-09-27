@@ -64,7 +64,7 @@
         </nav>
       </header>
    <main>
-       <div>
+      <div class="container">
            <ul class="breadcrumbs">
                <li><a href="index.html" aria-label="Главная">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg>
@@ -73,9 +73,9 @@
                <li><a href="#">Инструмент</a></li>
                <li><a href="#">Перфораторы</a></li>
            </ul>
-           <h1>Перфораторы</h1>
-       </div>
-       <section>
+           <h1 class="title">Перфораторы</h1>
+      <div class="catalog-columns">
+       <section class="left-column">
         <h2 class="visually-hidden">Фильтр товаров</h2>
          <form method="POST" action="https://echo.htmlacademy.ru">
            <div class="range-filter">Фильтр:</div>
@@ -134,9 +134,10 @@
             <button type="submit" class="filter-button">Показать</button>
           </form>
        </section>
+       <div class="right-column">
        <section class="sorting">
            <h2>Сортировка:</h2>
-           <ul>
+           <ul class="sorting-by">
              <li>
                <a href="">По цене</a>
              </li>
@@ -147,7 +148,7 @@
                <a href="">По функционалу</a>
              </li>
            </ul>
-           <ul class="sorting-arrows">
+           <ul class="sorting-arrows sorting-by">
              <li>
                <a href="#" aria-label="по возрастанию"></a>
              </li>
@@ -249,6 +250,9 @@
                <li class="pagination-item"><a href="#">3</a></li>
                <li class="pagination-item"><a href="#">Следующая</a></li>
            </ul>
+        </div>
+        </div>
+        </div>
        </section>
        <section class="about-drills">
            <h2>Пара слов о перфораторах</h2>
@@ -308,6 +312,7 @@
           <p>Разработано —<br> 
              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
+      </div>
       </div>
       </div>
       </footer>
