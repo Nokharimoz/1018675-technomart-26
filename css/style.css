@@ -27,6 +27,7 @@ a{
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
+    margin-bottom: 60px;
 
     background-color: #f3f7f9;
 }
@@ -91,8 +92,8 @@ a{
     padding-right: 55px;
     padding-top: 15px;
     padding-bottom: 11px;
-    border-bottom: 5px solid #d6656e;
     background-color: #ee3643;
+    box-shadow: 0 5px 0 #d6656e;
 }
 
 .logo:hover{
@@ -107,6 +108,9 @@ a{
 .user-navigation li:last-child a{
     font-size: 17px;
     line-height: 18px;
+    padding: 0 22px;
+    padding-top: 17px;
+    padding-bottom: 16px;
     background-color: #63a63e;
 }
 
@@ -202,17 +206,14 @@ a{
     align-items: center;
     font-size: 17px;
     line-height: 17px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 50px;
-    padding-right: 55px;
     color: #ffffff;
     border-bottom: 5px solid #293449;
 
     background-color: #32425c;
 }
 
-.main-navigation a {
+.main-navigation a{
+    display: inline-block;
     padding: 21px 30px 21px;
 }
 
@@ -226,19 +227,21 @@ a{
 
 .offers-slider{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .store-offers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
 }
 
 .offers-box{
     width: 300px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    height: 123px;
 }
 
 .offers-box:nth-child(3n){
@@ -292,6 +295,8 @@ a{
 }
 
 .discounts{
+    margin-top: 20px;
+    margin-left: 620px;
     background-color: #8ed78f;
 }
 
@@ -300,11 +305,19 @@ a{
 }
 
 .delivery{
+    margin-top: 20px;
+    margin-left: 620px;
     background-color: #ffc047;
 }
 
 .delivery a{
     background-color: #e5ac40;
+}
+
+.slider{
+    margin-top: -315px;
+    width: 620px;
+    height: 265px;
 }
 
 .slide-2{
@@ -395,6 +408,7 @@ a{
     color: #000000;
 }
 
+
 .switcher-button{
     font-family: "PTSans",Arial, sans-serif;
     font-size: 21px;
@@ -476,7 +490,7 @@ a{
 
 .techno-contacts{
     width: 300px;
-   margin-left: auto;
+    margin-left: auto;
 }
 
 .techno-contacts h2{
@@ -926,13 +940,13 @@ a{
 }
 
 .footer-logo{
-    display: block;
+    display: inline-block;
     padding-left: 42px;
     padding-right: 42px;
     padding-top: 21px;
     padding-bottom: 21px;
-    border-bottom: 5px solid #a13343;
-
+    
+    box-shadow: 0 5px 0 #a13343;
     background-color: #ee3643;
 }
 
@@ -955,9 +969,10 @@ a{
     background-color: #212a3a;
 }
 
-.social-button:hover,
-.social-button:active{
+.footer-social .social-button:hover,
+.footer-social .social-button:active{
     background-color: #ed3643;
+    border-bottom: none;
 }
 
 .footer-logo:active{
