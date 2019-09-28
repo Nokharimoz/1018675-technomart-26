@@ -215,6 +215,7 @@ a{
 .main-navigation a{
     display: inline-block;
     padding: 21px 30px 21px;
+    vertical-align: top;
 }
 
 .main-navigation a:hover{
@@ -237,6 +238,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
 .offers-box{
@@ -279,6 +281,7 @@ a{
 }
 
 .instrument{
+    margin-left: 20px;
     background-color: #3bbce3;
 }
 
@@ -287,6 +290,7 @@ a{
 }
 
 .technics{
+    margin-left: 20px;
     background-color: #dc91d8;
 }
 
@@ -296,7 +300,7 @@ a{
 
 .discounts{
     margin-top: 20px;
-    margin-left: 620px;
+    margin-left: 640px;
     background-color: #8ed78f;
 }
 
@@ -306,7 +310,7 @@ a{
 
 .delivery{
     margin-top: 20px;
-    margin-left: 620px;
+    margin-left: 640px;
     background-color: #ffc047;
 }
 
@@ -940,18 +944,19 @@ a{
 }
 
 .footer-logo{
-    display: inline-block;
-    padding-left: 42px;
-    padding-right: 42px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    width: 218px;
+    padding-top: 20px;
+    padding-bottom: 18px;
     
     box-shadow: 0 5px 0 #a13343;
     background-color: #ee3643;
 }
 
-.footer-logo:hover{
+.footer .footer-logo:hover{
     background-color: #ca2c37;
+    border-bottom: none;
 }
 
 .footer-social ul{
