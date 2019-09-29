@@ -28,7 +28,7 @@ a{
     line-height: 17px;
     color: #ffffff;
     margin-bottom: 60px;
-
+    padding-bottom: 60px;
     background-color: #f3f7f9;
 }
 
@@ -40,10 +40,6 @@ a{
     list-style: none;
 }
 
-.user-login{
-    display: flex;
-    justify-content: space-between;
-}
 
 .user-navigation a,
 .main-navigation a,
@@ -54,7 +50,7 @@ a{
 .user-navigation a{
     padding: 0 22px;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
 }
 
 .header-top-wrapper{
@@ -79,7 +75,7 @@ a{
     justify-content: space-between;
 
     margin-top: 12px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     width: 433px;
     font-size: 17px;
@@ -94,8 +90,8 @@ a{
     margin-top: 0;
     padding-left: 55px;
     padding-right: 55px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    padding-top: 12px;
+    padding-bottom: 8px;
     background-color: #ee3643;
     box-shadow: 0 5px 0 #d6656e;
 }
@@ -114,7 +110,7 @@ a{
     line-height: 18px;
     padding: 0 22px;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     background-color: #63a63e;
 }
 
@@ -138,9 +134,16 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
 }
 .search input[type="search"] {
+    width: 270px;
+    padding-left: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 0;
+
 	color: #fff;
 	font-size: 17px;
-	line-height: 18px;
+    line-height: 18px;
+    border: none;
 	font-family: "Cuprum", Arial, sans-serif;
 	background-color: #293449;
 }
@@ -152,35 +155,64 @@ a{
 	background-color: white;
 	color: black;
 }
+
+.info{
+    width: 196px;
+    margin-left: 52px; 
+}
+
 .info p{
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     color: #ee3643;
     text-transform: none;
+    margin: 0;
 }
 
 .info-block{
     display: flex;
     justify-content: space-between;
+    margin-top: 47px;
+    margin-bottom: 45px;
+}
+
+
+.head-contacts{
+    margin: 0 auto;
+}
+
+.head-tel{
+    margin: 0;
 }
 
 .head-tel a{
-    padding-left: 42px;
+    display: inline-block;
+    padding-left: 70px;
     padding-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     font-size: 21px;
     line-height: 21px;
-    border: 4px solid white;
+    border: 3px solid white;
     color: #ee3643;
 }
 
 .head-adress{
     font-size: 14px;
     line-height: 24px;
+    font-weight: 400;
     color: #32425c;
 }
 
 .login{
+    margin-bottom: 67px;
+
+    padding-right: 27px;
+    padding-left: 48px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -188,10 +220,21 @@ a{
 }
 
 .reg{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.user-login{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
 }
 
 .user-login li a:hover{
@@ -210,6 +253,7 @@ a{
     align-items: center;
     font-size: 17px;
     line-height: 17px;
+
     color: #ffffff;
     border-bottom: 5px solid #293449;
 
@@ -620,6 +664,8 @@ a{
 
 .catalog-login{
     display: flex;
+    justify-content: space-between;
+  
     list-style: none;
 }
 
@@ -639,7 +685,13 @@ a{
 }
 
 .user-block a{
+    margin-right: 0;
+    padding-right: 68px;
+    padding-left: 48px;
+    padding-top: 15px;
+    padding-bottom: 14px;
     color: #000000;
+    background-color: #ffffff;
 }
 
 .user-block a:active{
@@ -839,12 +891,14 @@ a{
 }
 
 .catalog-item{
+    position: relative;
     font-weight: 600;
     text-align: center;
     font-family: 'PT Sans', Arial, sans-serif;
     color:black;
     line-height: 20px;
     border: 1px solid#ccc;
+    
 }
 
 .catalog-item:hover{
