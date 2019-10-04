@@ -59,16 +59,16 @@ a{
     display: inline-block;
     position: relative;
     width: 100px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 14px;
     padding-left: 50px;
 }
 
 .user-bookmark::before{
     content: "";
     position: absolute;
-    top: 13px;
-    left: 20px;
+    top: 11px;
+    left: 18px;
 
     background-image: url(../img/icon-bookmark.svg);
     background-repeat: no-repeat;
@@ -109,8 +109,8 @@ a{
 .basket::before{
     content: "";
     position: absolute;
-    top: 13px;
-    left: 20px;
+    top: 11px;
+    left: 18px;
 
     background-image: url(../img/icon-cart.svg);
     background-repeat: no-repeat;
@@ -135,29 +135,32 @@ a{
     line-height: 18px;
     border: none;
 	font-family: "Cuprum", Arial, sans-serif;
-	background-color: #293449;
+    background-color: #293449;
+    
+    background:
+    #293449 url("../img/sprite.png") no-repeat 7px -582px;
 }
 
+
+
 .search input[type="search"]:hover {
-	background-color: #212a3a;
+    background-color: #212a3a;
 }
 .search input[type="search"]:focus {
 	background-color: white;
 	color: black;
 }
 
-.search-icon{
-    margin: 0;
-    top: 12px;
-    left: 130;
-    z-index: 11;
-    position: absolute;
 
-    fill: #646b7b;
-    stroke: #646b7b;
+input[type="search"]:hover {
+    background: 
+    #212a3a url("../img/sprite.png") no-repeat 7px -364px;
 }
 
-
+input[type="search"]:focus {
+    color: #000;
+background: #fff url("../img/sprite.png") no-repeat 7px -401px; outline: none;
+}
 
 .header-top-wrapper{
     display: flex;
@@ -251,10 +254,13 @@ a{
 
 .info p{
     width: 268px;
+    margin-top: 2px;
+    margin-left: 4px;
 
     font-family: "Cuprum Italic", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 23px;
+    letter-spacing: -1px;
     font-style: italic;
 
 
@@ -266,7 +272,7 @@ a{
 .info-block{
     display: flex;
     margin-top: 47px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 
@@ -281,9 +287,9 @@ a{
 .head-tel a{
     display: inline-block;
     position: relative;
-    padding-left: 70px;
+    padding-left: 71px;
     padding-right: 50px;
-    padding-top: 9px;
+    padding-top: 7px;
     padding-bottom: 9px;
     font-size: 21px;
     line-height: 21px;
@@ -294,8 +300,8 @@ a{
 .head-tel a::before{
     content: "";
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 8px;
+    left: 12px;
 
     background-image: url(../img/icon-phone.svg);
     background-repeat: no-repeat;
@@ -307,10 +313,10 @@ a{
 
 .head-adress{
     margin: 0;
-    padding-top: 9px;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-left: 9px;
     
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     text-transform: none;
@@ -426,6 +432,8 @@ a{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+
+    margin-bottom: 38px;
 }
 
 .store-offers {
@@ -433,7 +441,8 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -3px;
+    margin-top: -6px;
+
     list-style: none;
     padding: 0;
 }
@@ -616,7 +625,7 @@ a{
 
 .slider .button{
     display: inline-block;
-    margin-top: 105px;
+    margin-top: 104px;
     margin-left: 26px;
     padding: 10px 47px;
 
@@ -631,8 +640,9 @@ a{
 }
 
 .slider h3{
+    margin-top: 35px;
     padding-top: 22px;
-    padding-left: 22px;
+    padding-left: 23px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
@@ -644,6 +654,9 @@ a{
 .slider p{
     margin-top: -35px;
     margin-left: 24px;
+    padding-top: 1px;
+    padding-left: 1px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -685,7 +698,11 @@ a{
 
 .popular-goods h2,
 .popular-brands h2{
-    font-family: "PTSans", Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 27px;
+    margin-bottom: 20px;
+
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -985,6 +1002,16 @@ a{
     list-style: none;
 }
 
+.catalog-login li:first-child{
+    margin-top: -2px;
+    margin-left: -21px;
+}
+
+.catalog-login li:last-child{
+    margin-top: -2px;
+    margin-right: 72px;
+}
+
 .catalog-login a{
     font-size: 16px;
     line-height: 18px;
@@ -1015,8 +1042,12 @@ a{
     position: relative;
     padding-right: 68px;
     padding-left: 48px;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+
+    font-size: 21px;
+    line-height: 21px;
+
     color: #000000;
     background-color: #ffffff;
 }
@@ -1024,10 +1055,10 @@ a{
 .user-block a::after{
     content: "";
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 13px;
+    right: 13px;
 
-    background-image: url(../img/icon-login.svg);
+    background-image: url(../img/icon-logout.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -1040,7 +1071,7 @@ a{
 .user-block a::before{
     content: "";
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 15px;
 
     background-image: url(../img/icon-user.svg);
@@ -1048,7 +1079,7 @@ a{
     background-position: 0 0;
 
     width: 20px;
-    height: 17px;
+    height: 18px;
 
     opacity: 0.6;
 }
@@ -1056,6 +1087,8 @@ a{
 .user-block a:active{
     color: rgba(0, 0, 0, 0.3)
 }
+
+.catalog-login
 
 .breadcrumbs{
     display: flex;
