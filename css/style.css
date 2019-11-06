@@ -335,7 +335,7 @@ img {
     background-position: 0 0;
     width: 20px;
     height: 17px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .login:hover::before {
@@ -379,11 +379,13 @@ img {
     padding-left: 9px;
 }
 
-.user-login li a:hover {
+.user-login .reg:hover,
+.user-login .login:hover{
     color: #ee3643;
 }
 
-.user-login li a:active {
+.user-login .reg:active,
+.user-login .login:active {
     color: #dadada;
 }
 
@@ -1558,37 +1560,55 @@ img {
     padding-bottom: 10px;
 }
 
+.log-in::before{
+    content: "";
+    position: absolute;
+
+    content: "";
+    top: 12px;
+    left: 14px;
+    background-image: url(../img/icon-user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 20px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+
 .log-in:hover {
     color: #000000;
 }
 
-.log-in svg {
-    position: absolute;
-    fill: #c5c5c5;
-    top: 12px;
-    right: 198px;
+
+.log-in:hover::before,
+.log-out:hover::before {
+   opacity: 1;
 }
 
-.log-in svg:hover,
-.log-out svg:hover {
-    fill: #000000;
+.log-in:active::before,
+.log-out:active::before{
+    opacity: 0.3;
 }
 
 .log-out {
     position: relative;
 }
 
-.log-out svg {
+.log-out::before{
+    content: "";
     position: absolute;
-    top: 13px;
-    right: 10px;
-    fill: #c5c5c5;
-}
 
-.log-out svg:active,
-.log-in svg:active {
-    fill: #000000;
-    opacity: 0.3;
+    content: "";
+    top: 12px;
+    right: 14px;
+    background-image: url(../img/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 20px;
+    height: 18px;
+    opacity: 0.5;
+
 }
 
 .user-block a:active {
@@ -2529,4 +2549,8 @@ input[type="text"] {
 
 .modal-3 .button:last-child {
     margin-left: 20px;
+}
+
+.modal-show{
+    display: block;
 }
