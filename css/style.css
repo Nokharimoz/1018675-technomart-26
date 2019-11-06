@@ -1464,14 +1464,23 @@ img {
     margin-left: -470px;
     -webkit-box-shadow: 0 20px 40px 10px rgba(41, 52, 73, 0.75);
     box-shadow: 0 20px 40px 10px rgba(41, 52, 73, 0.75);
-    z-index: 999;
+    z-index: 666;
 }
+
+.modal-2 iframe {
+    position: fixed;
+    z-index: 999;
+  
+    border: none;
+  }
+  
 
 .modal-2 .close {
     position: absolute;
     margin-left: 910px;
     margin-top: -445px;
     cursor: pointer;
+    z-index: 999;
 }
 
 .modal-2 p {
@@ -2187,7 +2196,6 @@ input[type="text"] {
     display: inline-block;
     vertical-align: middle;
     width: 218px;
-    margin-right: 20px;
     margin-bottom: 20px;
     line-height: 20px;
     font-weight: bold;
@@ -2553,4 +2561,110 @@ input[type="text"] {
 
 .modal-show{
     display: block;
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s;
+
 }
+
+@-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
+    }
+  
+    70% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+@keyframes bounce {
+    0% {
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
+    }
+  
+    70% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+  }
+  
+
+
+@keyframes shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+  }
+
+  .modal-error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
+  }
